@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+
+	<link rel="stylesheet" href="style.css" />
+	<style>
+		img {
+			width: 15vw;
+		}
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: start;
+
+			width: 100vw;
+			height: auto;
+		}
+
+		#grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+
+
+
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="navbar"></div>
+	<div id="mainpage">
+		<div id="grid">
+			<div class="img-one">
+				<img src="I Like to Touch.HEIC" alt="I Like to Touch" title="I Like to Touch">
+				<p> <strong> I Like to Touch </strong></p>
+				<p> <em> Aug. 8, 2025 </em></p>
+			</div>
+
+			<div class="img-two">
+				<img src="kicking.jpg" alt="kicking" title="kicking">
+				<p> <strong> kicking </strong></p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+
+			<div class="img-three">
+				<img src="PinkMe.heic" alt="Pink Me" title="Pink Me">
+				<p> <strong> Pink Me </strong> </p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+			<div class="img-three">
+				<img src="PinkMe.heic" alt="Pink Me" title="Pink Me">
+				<p> <strong> Pink Me </strong> </p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+			<div class="img-three">
+				<img src="PinkMe.heic" alt="Pink Me" title="Pink Me">
+				<p> <strong> Pink Me </strong> </p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+			<div class="img-three">
+				<img src="PinkMe.heic" alt="Pink Me" title="Pink Me">
+				<p> <strong> Pink Me </strong> </p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+			<div class="img-three">
+				<img src="PinkMe.heic" alt="Pink Me" title="Pink Me">
+				<p> <strong> Pink Me </strong> </p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+			<div class="img-three">
+				<img src="PinkMe.heic" alt="Pink Me" title="Pink Me">
+				<p> <strong> Pink Me </strong> </p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+			<div class="img-three">
+				<img src="PinkMe.heic" alt="Pink Me" title="Pink Me">
+				<p> <strong> Pink Me </strong> </p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+			<div class="img-three">
+				<img src="PinkMe.heic" alt="Pink Me" title="Pink Me">
+				<p> <strong> Pink Me </strong> </p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+			<div class="img-three">
+				<img src="PinkMe.heic" alt="Pink Me" title="Pink Me">
+				<p> <strong> Pink Me </strong> </p>
+				<p> <em> Aug. 11, 2025 </em></p>
+			</div>
+			
+		</div>
+	</div>
+
+
+</body>
+
+
+<script>
+	fetch("navbar.html")
+		.then(res => res.text())
+		.then(data => {
+			document.getElementById("navbar").innerHTML = data;
+		});
+</script>
+
+</html>
